@@ -1,6 +1,8 @@
-# This Python program will allow a user to choose between 1 of 2 financial calculators
-# Investment Calculator: Calculates the potential amount of interest earned on an investment based on the user's deposit, interest rate, and investment period.
-# Bond Calculator: Computes the monthly repayment amount for a home loan based on the house value, interest rate, and repayment period.
+# This program will allow a user to choose between 1 of 2 calculators
+# Investment Calculator: Calculates the amount of interest earned based on
+# The user's deposit, interest rate, and investment period.
+# Bond Calculator: Computes the monthly repayment amount for a home loan
+# Based on the house value, interest rate, and repayment period.
 
 import math
 
@@ -16,7 +18,7 @@ while True:
     selection = input(choice).lower().replace(" ", "") 
 
     
-    # Creating conditional statement to determine output actions depending on users choice of calculator
+    # Conditional statement to determine output actions depending on users choice
     if selection == "investment":
         print("Thank you for choosing the investment calculator") # Print confirmation Investment calculator was chosen
         
@@ -25,7 +27,7 @@ while True:
         time_of_investment = int(input("Please enter the number of years you would like to invest: ")) # Ask user confirm the number of years they would like to invest
         interest = input("Please choose either simple or compound interest: ") # Ask user to choose between simple or compound interest
     
-        if interest == "simple": # indented conditional statement if simple interest is chosen
+        if interest == "simple": # Indented conditional statement if simple interest is chosen
             simple_total = deposit*(1 + interest_rate/100*time_of_investment) # Formulae for simple interest
             print(f"At the end of the term your investment will be worth £{simple_total}") # Print investment value at the end of the term
             break # Break loop
@@ -35,7 +37,7 @@ while True:
             print(f" At the end of the term your investment will be worth £{compound_total}") # Print investment value at the end of the term
             break
 
-    elif selection == "bond": # indented conditional statement if Bond calculator is chosen
+    elif selection == "bond": # Indented conditional statement if Bond calculator is chosen
         print() # Blank line for presentation
         print("Thank you for choosing the bond calculator") # Print confirmation that Bond calcualtor was chosen
         
