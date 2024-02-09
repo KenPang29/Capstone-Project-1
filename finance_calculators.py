@@ -43,10 +43,10 @@ while True:
         
         house_value = float(input("Please enter the value of your house: ")) #Ask user to input house value
         house_interest = float(input("Please enter the interest rate: ")) # Ask user to input interest rate
-        time_bond = int(input("Please enter the number of months to repay the bond: ")) # Ask user to input length left to repay bond
-        repayment = round((house_interest/100/12 * house_value) / (1 - (1 + house_interest/100/12)**(-time_bond)), 2) # Formulae for bond repayment
+        length_of_bond = int(input("Please enter the number of months to repay the bond: ")) # Ask user to input length left to repay bond
+        repayment_amount = round((house_interest/100/12 * house_value) / (1 - (1 + house_interest/100/12)**(-length_of_bond)), 2) # Formulae for bond repayment
         
-        print(f"Your monthly repayment amount for the home loan will be £{repayment}") # Print monthly repayment for legnth of the term
+        print(f"Your monthly repayment amount for the home loan will be £{repayment_amount}") # Print monthly repayment for legnth of the term
         break # Break loop
 
 
